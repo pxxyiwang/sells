@@ -34,6 +34,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   // these devServer options should be customized in /config/index.js
   devServer: {
     before (app) {
+      //  路由 测试数据的路由（返回的是数据）
       app.get('/api/seller',function(req,res){
         res.json({
           errno: 0,

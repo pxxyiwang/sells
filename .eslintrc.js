@@ -24,6 +24,11 @@ module.exports = {
     // allow async-await
     'generator-star-spacing': 'off',
     // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'semi': ['error','always'],
+    //  双引号不限制
+    'quotes': 0,
+    //  不限制函数名后面的括号与函数名之间必须有空格
+    'space-before-function-paren': 0
   }
 }
