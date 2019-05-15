@@ -29,6 +29,7 @@ module.exports = {
     //  双引号不限制
     'quotes': 0,
     //  不限制函数名后面的括号与函数名之间必须有空格
-    'space-before-function-paren': 0
+    'space-before-function-paren': 0,
+    'vetur.validation.template': false
   }
 }

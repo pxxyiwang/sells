@@ -35,7 +35,6 @@ export default {
       response = response.body;
       if (response.errno === ERR_OK) {
         this.seller = response.data;
-        console.log(this.seller);
       }
     });
   },
@@ -46,30 +45,22 @@ export default {
 </script>
 
 <style lang="stylus" rel="stylesheet/styuls">
-@import './common/stylus/mixin.styl';
-
-.tab {
-  display: flex;
-  width: 100%;
-  height: 40px;
-  line-height: 40px;
+@import './common/stylus/mixin.styl'
+.tab
+  display: flex
+  width: 100%
+  height: 40px
+  line-height: 40px
   /* position: relative;
   border: none; */
-  border-1px(rgba(7, 17, 27, 0.1));
-
-  .tab-item {
-    flex: 1;
-    text-align: center;
-
-    & > a {
-      display: block;
-      font-size: 14px;
-      color: rgb(77, 86, 93);
-
-      &.active {
-        color: rgb(240, 20, 20);
-      }
-    }
-  }
-}
+  border-1px(rgba(7, 17, 27, 0.1))
+  .tab-item
+    flex: 1
+    text-align: center
+    & > a
+      display: block
+      font-size: 14px
+      color: rgb(77, 86, 93)
+      &.active
+        color: rgb(240, 20, 20)
 </style>
